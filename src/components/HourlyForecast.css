@@ -1,0 +1,51 @@
+/*-----------------------------Hourly Forecast Panel-----------------------------*/
+
+.hourly-forecast {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 10px 0;
+  gap: 15px;
+}
+/* -----The Hour interval block timing styling-----*/
+.hour-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 60px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+}
+.hour-block img {width: 45px;margin: 4px 0;}
+.hour-time {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 4px;
+}
+/* -----The Temperature styling-----*/
+.hour-temp {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+}
+/* -----The feels like styling-----*/
+
+.hour-feels {
+  font-size: 13px;
+  opacity: 0.75;
+  color: #fff;
+}
+/* -----The description styling-----*/
+
+.hour-desc {
+  font-size: 12px;
+  color: #fff;
+  opacity: 0.75;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 2px;
+}
+

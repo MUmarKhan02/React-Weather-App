@@ -1,0 +1,36 @@
+/*-----------------------------5-Day Forecast Panel-----------------------------*/
+.forecast{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 0px;
+    color: white;
+}
+/* -----The day title styling-----*/
+
+.forecast-day{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    min-width: 60px;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+.forecast-day img{width: 50px;margin: 6px 0;}
+.forecast-date{font-size: 18px;opacity: 0.8;}
+
+/* -----The feels like styling-----*/
+.forecast-feels{font-size: 15px;opacity: 0.75;}
+/* -----The temperature styling-----*/
+.forecast-temp{font-size: 18px;}
+/* -----The description styling-----*/
+.forecast-desc {
+  font-size: 12px;
+  opacity: 0.75;
+  text-transform: capitalize;
+  margin-bottom: 4px;
+  text-align: center;
+}
+

@@ -1,0 +1,229 @@
+/*-----------------------------Main Title-----------------------------*/
+
+.main-title{
+    color: #fff;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+/*-----------------------------General Weather Application Styling-----------------------------*/
+
+.weather-wrapper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:40px;
+}
+
+/*-----------------------------Search bar-----------------------------*/
+.search-bar{
+    display:flex;
+    align-items: center;
+    gap:12px;
+
+  /*If you wish to have the search bar and search icon image be 1 instead of 2 separate displayed items*/
+
+    /* background: #fff;
+    padding: 5px 10px;
+    border-radius: 30px;
+    margin-bottom:20px; */
+}
+/* -----The search bar input area styling-----*/
+.search-bar input{
+    height: 50px;
+    width: 400px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding-left:25px;
+    color: #626262;
+    background: #ebfffc;
+    font-size:18px;
+}
+/* -----search bar image-----*/
+.search-bar img{
+    width: 50px;
+    padding: 15px;
+    border-radius: 50%;
+    background: #ebfffc;
+    cursor: pointer;
+}
+
+
+/* -----Wrapper for Search-----*/
+.search-wrapper {position: relative;width: 400px;}
+
+/* -----Search Suggestions Dropdown Menu-----*/
+.suggestions-dropdown {
+   background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  max-height: 250px;
+  overflow-y: auto;
+  font-size: 16px;
+}
+/* -----Every Individual Search Suggestion Item-----*/
+.suggestion-item {
+  padding: 10px 16px;
+  cursor: pointer;
+  display: flex;
+  gap: 4px;
+}
+/* -----When you hover over an item to show the mouse cursor is over it-----*/
+.suggestion-item:hover {background-color: #f1f1f1;}
+
+/* -----Suggestion Location Name-----*/
+.suggestion-name {font-weight: 500;}
+
+/* -----Suggestion location State/Province and Country-----*/
+.suggestion-state,.suggestion-country {  opacity: 0.7;}
+
+/* -----Search bar input-----*/
+.input-wrapper {position: relative;flex: 1;}
+.input-wrapper input {width: 100%;padding-right: 30px;}
+/* -----Clear-X input styler and hover-----*/
+.clear-x {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #aaa;
+  user-select: none;
+}
+
+.clear-x:hover {color: #fff;}
+
+
+/*-----------------------------Unit Toggle Button-----------------------------*/
+
+.unit-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  gap: 8px;
+}
+/* -----Individual button styling-----*/
+.unit-btn {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.4);
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  opacity: 0.6;
+}
+/* -----When the button is clicked and set to "active" or "on"-----*/
+.unit-btn.active {background: rgba(255,255,255,0.25);opacity: 1;}
+
+
+/*-----------------------------Current Weather Panel-----------------------------*/
+.weather{
+    width:1300px;
+    max-width: 95%;
+    padding:45px;
+    border-radius: 20px;
+    background-image:linear-gradient(135deg, #83A4D4, #061e37);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* -----The current weather display icon-----*/
+.weather-icon{width: 150px;margin: 30px 0;}
+/* -----The temperature styling-----*/
+.temperature{font-size: 60px;color: #fff;line-height:1;}
+/* -----The location styling-----*/
+.location{font-size: 40px;color: #fff;}
+
+/* -----The main weather data information styling-----*/
+.weather-data{
+    width:100%;
+    margin-top:40px;
+    color:#fff;
+    display:flex;
+    justify-content: space-between;
+}
+/* -----The secondary information for weather at bottom of current weather panel-----*/
+.weather-data .col{
+    display:flex;
+    font-size:22px;
+    align-items: flex-start;
+    gap:12px;
+}
+/* -----The secondary information for weather at bottom of current weather panel span and img tags-----*/
+.weather-data .col span{display:block;font-size:16px;}
+.weather-data .col img{width:26px;margin-top:10px;}
+
+/* -----Style Weather Description-----*/
+.description {
+  color: #fff;
+  font-size: 21px;
+  opacity: 0.85;
+  margin-top: 5px;
+  text-transform: capitalize; 
+}
+/* -----Temperature range (min,max)-----*/
+.temp-range {
+  color: #fff;
+  font-size: 19px;
+  opacity: 0.75;
+  margin-top: 5px;
+}
+
+/*-----------------------------Hourly Forecast Panel-----------------------------*/
+
+.hourly-forecast-panel{
+    width:1300px;
+    max-width: 95%;
+    margin-top:20px;
+    padding:45px;
+    border-radius: 20px;
+    background-image:linear-gradient(135deg, #83A4D4, #061e37);
+}
+
+/* -----Hourly Forecast Title-----*/
+
+.hourly-forecast-title{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+/*-----------------------------Daily Forecast Panel-----------------------------*/
+
+.forecast-panel{
+    width:1300px;
+    max-width: 95%;
+    margin-top:20px;
+    padding:45px;
+    border-radius: 20px;
+    background-image:linear-gradient(135deg, #83A4D4, #061e37);
+}
+/* -----Daily Forecast Title-----*/
+
+.forecast-title{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+
+/* -----Current Weather Time Styling-----*/
+.current-time {
+  font-size: 18px;
+  color: #fff;
+  opacity: 0.8;
+  margin-top: 5px;
+}
