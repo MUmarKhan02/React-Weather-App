@@ -85,16 +85,6 @@ App Should Run Locally At ```bash http://localhost:5173```
 
 ---
 
-### App Structure
-
-src/
-├── App.js                  # Main component
-├── index.js                # Entry point
-├── components/             # UI components
-└── styles/                 # CSS files
-
----
-
 ## Built With
 - React
 - Vite
