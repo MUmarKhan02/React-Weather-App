@@ -1,16 +1,121 @@
-# React + Vite
+# React Weather App
+A fully responsive weather application built with **React (JavaScript, HTML, CSS)** that allows users to search for any city and view detailed weather information.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The app fetches real-time data from the **OpenWeatherMap API** and displays current conditions, hourly forecasts, and 5-day forecasts in a clean, modern interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- Search any city manually or via autosuggest dropdown
+- Press Enter or click search icon
+- Toggle between Celsius and Fahrenheit
+- Displays local time (user + selected location)
+- 3-Hour interval hourly forecast
+- 5-Day daily forecast
+- Fully responsive layout
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## UI & Layout
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Users may:
+- Enter a city manually
+- Press Enter or click the search icon
+- Use autosuggest to select from recommended locations
+
+
+A temperature toggle button in the top-right allows switching between **°C and °F**.
+
+---
+
+## Panels & Overview
+
+After searching for a location, the app displays three panels:
+
+### Current Weather Panel
+- Weather icon
+- Weather description
+- Max / Min temperature
+- Local time (user timezone)
+- Selected location time (based on its timezone)
+- Current date
+- Feels like temperature
+- Pressure
+- Humidity
+- Wind speed
+
+---
+
+### 3-Hours Hourly Forecast
+
+Displays forecast data in 3-hour intervals including:
+
+- Time interval
+- Weather icon
+- Weather description
+- Temperature
+- Feels like temperature
+
+---
+
+### 5-Day Forecast
+
+Displays daily forecasts for the next 5 days (including today):
+
+- Day name
+- Weather icon
+- Weather description
+- Max / Min temperature
+- Feels like temperature
+---
+
+# Installation
+
+Clone Project:
+
+```bash
+git clone https://github.com/MUmarKhan02/React-Weather-App.git
+cd React-Weather-App
+```
+
+Install Dependencies ```bash npm install```
+Start Server ```bash npm run dev```
+App Should Run Locally At ```bash http://localhost:5173```
+
+---
+
+### App Structure
+
+src/
+├── App.js                  # Main component
+├── index.js                # Entry point
+├── components/             # UI components
+└── styles/                 # CSS files
+
+---
+
+## Built With
+- React
+- Vite
+- JavaScript
+- CSS
+- OpenWeatherMap API
+
+---
+# API Configuration
+
+To run this project, you need an OpenWeatherMap API key.
+1. Create a free account at https://openweathermap.org/
+2. Generate an API key
+3. Store it securely in a .env file: ```bash VITE_WEATHER_API_KEY=your_api_key_here```
+
+Access using: ```bash import.meta.env.VITE_WEATHER_API_KEY```
+
+---
+
+# Future Improvements
+- Add animations for weather conditions
+- Improve mobile layout transitions
+- Add loading skeleton states
+- Add error handling UI improvements
