@@ -3,6 +3,9 @@ A fully responsive weather application built with **React (JavaScript, HTML, CSS
 
 The app fetches real-time data from the **OpenWeatherMap API** and displays current conditions, hourly forecasts, and 5-day forecasts in a clean, modern interface.
 
+## Demo
+[https://mumarkhan02.github.io/React-Weather-App/](https://mumarkhan02.github.io/React-Weather-App/)
+
 ---
 
 ## Features
@@ -102,10 +105,3 @@ To run this project, you need an OpenWeatherMap API key.
 
 Access using: ```bash import.meta.env.VITE_WEATHER_API_KEY```
 
----
-
-# Future Improvements
-- Add animations for weather conditions
-- Improve mobile layout transitions
-- Add loading skeleton states
-- Add error handling UI improvements
